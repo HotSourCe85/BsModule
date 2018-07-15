@@ -54,9 +54,7 @@ public class UserSvcImpl implements UserSvc {
 		String rawPassword = user.getPassword();
 		String encodedPassword = new BCryptPasswordEncoder().encode(rawPassword);
 		user.setPassword(encodedPassword);
-		int a = userMapper.insertUser(user);
-		//userMapper.insertAuthority(user);
-
+		userMapper.insertUser(user);
 		return null;
 	}
 

@@ -13,17 +13,7 @@ import com.bs.common.ENUM.RestEnum;
 
 
 public class BSUtils {
-//	public static void main(String[] args) {
-//		Map<String, Object> reqMap = new HashMap<>();
-//		
-//		reqMap.put("query", "삼국지");
-//		reqMap.put("page", "1");
-//		
-//		RestEnum addr = RestEnum.SEARCH_BOOK_PATH;
-//		
-//		String address = addr.getValue();
-//		System.out.println(apiCallByGet(address, reqMap));
-//	}
+	
 	public static String apiCallByGet(String address, Map<String, Object> reqMap) {
 		RestEnum secretValue = RestEnum.CLIENT_SECRET;
 		RestEnum hostValue = RestEnum.HOST;

@@ -25,7 +25,7 @@
 
 			<button type="submit" class="btn btn-success">Log In</button>
 			<button type="button" class="btn btn" onclick="location.href='/signUp'">회원 가입</button>
-			<button type="button" class="btn btn" onclick="location.href='/insert'">test</button>
+			<!--  <button type="button" class="btn btn" onclick="location.href='/insert'">test</button>-->
 			<input type="hidden" name="${_csrf.parameterName}"
 				value="${_csrf.token}" />
 		</form>

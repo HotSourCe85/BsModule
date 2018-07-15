@@ -12,7 +12,6 @@ import com.bs.vo.ProcRtnVO;
 public class SearchHistorySvcImpl implements SearchHistorySvc {
 
 	@Override
-	//public ProcRtnVO getSearchBookList(Map<String, Object> reqMap) {
 	public String getSearchBookList(Map<String, Object> reqMap) {
 		RestEnum addr = RestEnum.SEARCH_BOOK_PATH;
 		

@@ -1,0 +1,22 @@
+/*paging*/
+.paging{position:relative;margin:20px 0;height:40px;text-align:center;}
+.paging a{position:relative;display:inline-block;width:34px;padding:10px 0 9px;margin:0 -2px;background-color:#fff;font-size:12px;z-index:2;color:#767676;}
+.paging a:before{content:'';border:1px solid #e1e2e4;position:absolute;left:0;right:0;top:0;bottom:0;}
+.paging a.on{background-color:#3e74cb;color:#fff;}
+.paging a.on:before{content:'';border:1px solid #3e74cb;}
+.paging a.first, .paging a.prev, .paging a.next, .paging a.last{padding:9px 0 10px;}
+.paging a.first:hover, .paging a.prev:hover, .paging a.next:hover, .paging a.last:hover{text-decoration:none;}
+.paging a.off{cursor:default;pointer-events:none;}
+.paging a.first.off .sp{background-position:-150px -25px;}
+.paging a.prev.off .sp{background-position:-100px -25px;}
+.paging a.next.off .sp{background-position:-124px -25px;}
+.paging a.last.off .sp{background-position:-174px -25px;}
+.paging .txt_guide{position:absolute;left:0;top:10px;font-size:11px;}
+.paging + .btn_area{position:relative;margin-top:-63px;}
+.paging + .btn_gap{margin-top:30px;}
+
+.sp{display:inline-block;font-size:0;background:url(../images/sprite.png) no-repeat;color:transparent;}
+.sp.ico_paging_first{width:12px;height:12px;background-position:-150px 0;}
+.sp.ico_paging_prev{width:8px;height:12px;background-position:-100px 0;}
+.sp.ico_paging_next{width:8px;height:12px;background-position:-124px 0;}
+.sp.ico_paging_last{width:12px;height:12px;background-position:-174px 0;}
